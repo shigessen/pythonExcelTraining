@@ -4,7 +4,7 @@ from openpyxl.styles import Alignment, PatternFill, Font, Border, Side
 #定数
 TITLE_CELL_COLOR = "AA8866"
 
-wb = openpyxl.load_workbook("..\data\orders_aggregate.xlsx")
+wb = openpyxl.load_workbook(r".\data\orders_aggregate.xlsx")
 sh = wb.active
 
 #1行、2列を固定
@@ -49,4 +49,4 @@ for row in sh:
 
 
 
-wb.save("..\data\orders_aggregate_ed.xlsx")
+wb.save(r".\data\orders_aggregate_ed.xlsx")
